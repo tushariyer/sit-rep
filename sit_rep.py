@@ -1,5 +1,5 @@
-import sit_rep_server as server
-import sit_rep_client as client
+from Server import sit_rep_server as server
+from Client import sit_rep_client as client
 
 
 def get_input(text):
