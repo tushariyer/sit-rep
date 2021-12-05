@@ -10,8 +10,7 @@ jobs:
     code-coverage-analysis:
         runs-on: ubuntu-latest
         steps:
-          - name: Python Cov
-            uses: orgoro/coverage/v1
+          - uses: orgoro/coverage/v1
             with:
                 coverageFile: .github/coverage-configs.xml
                 token: ${{ secrets.HUB_TOKEN }}
