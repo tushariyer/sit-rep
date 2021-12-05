@@ -1,0 +1,13 @@
+name: Pull Request Assignor
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  pull-request-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/auto-assign-action@v1.2.1
+        with:
+          configuration-path: .github/pull-request-assignor.yml
