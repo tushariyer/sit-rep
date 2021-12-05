@@ -20,9 +20,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install build
         y | rm sit_rep.py
+        y | rm setup.py
+        rm -rf Client/
         mv Server/Solo/sit_rep.py ../../
+        mv Server/Solo/setup.py ../../
     - name: Build package
-      run: python setup-server.py sdist
+      run: python setup.py sdist
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
