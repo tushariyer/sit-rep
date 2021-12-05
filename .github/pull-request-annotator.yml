@@ -1,0 +1,6 @@
+feature: 'feature/*'
+bugfix: 'bugfix/*'
+chore: 'chore/*'
+cicd: 'cicd/*'
+client: '*client*'
+server: '*server*'

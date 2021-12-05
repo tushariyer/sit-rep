@@ -1,0 +1,15 @@
+name: Pull Request Annotator
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  pull-request-annotator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: TimonVS/pr-labeler-action@v3
+        with:
+          configuration-path: .github/pull-request-annotator.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.HUB_TOKEN }}
