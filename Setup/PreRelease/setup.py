@@ -6,7 +6,7 @@ long_desc = 'Licensed under the generic MIT License.\"sit-rep\" can either be do
             'Releases page on GitHub and manually added to PATH or installed via \"pip\".'
 version = ''
 
-with open("version.txt", "r", encoding="utf-8") as fh:
+with open("Setup/version.txt", "r", encoding="utf-8") as fh:
     version = fh.read()
     fh.close()
 
