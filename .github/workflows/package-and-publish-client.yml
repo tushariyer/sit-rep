@@ -1,4 +1,4 @@
-name: Package & Publish Client [Released]
+name: Package & Publish Client
 
 on:
   release:

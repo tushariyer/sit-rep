@@ -1,4 +1,4 @@
-name: Package & Publish [Pre-Release]
+name: Package & Publish Beta
 
 on:
   push:

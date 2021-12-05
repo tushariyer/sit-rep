@@ -1,4 +1,4 @@
-name: Package & Publish Bundle [Released]
+name: Package & Publish Bundle
 
 on:
   release:
