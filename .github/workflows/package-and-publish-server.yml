@@ -1,4 +1,4 @@
-name: Package & Publish [Released]
+name: Package & Publish Server [Released]
 
 on:
   release:
@@ -19,8 +19,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
+        y | rm sit_rep.py
+        mv Server/Solo/sit_rep.py ../../
     - name: Build package
-      run: python setup.py sdist
+      run: python setup-server.py sdist
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
