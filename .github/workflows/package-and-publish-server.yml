@@ -1,4 +1,4 @@
-name: Package & Publish Server [Released]
+name: Package & Publish Server
 
 on:
   release:

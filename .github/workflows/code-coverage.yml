@@ -10,7 +10,8 @@ jobs:
     code-coverage-analysis:
         runs-on: ubuntu-latest
         steps:
-          - uses: orgoro/coverage/v1
-            with:
+            - name: Run Coverage
+              uses: orgoro/coverage@v2
+              with:
                 coverageFile: .github/coverage-configs.xml
                 token: ${{ secrets.HUB_TOKEN }}
