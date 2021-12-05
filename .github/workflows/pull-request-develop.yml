@@ -18,7 +18,7 @@ jobs:
       uses: repo-sync/pull-request@v2
       with:
         destination_branch: "develop"
-        pr_title: github.head_ref
+        pr_title: ${{ github.head_ref }}
         pr_body: "👑 *Automated Pull Request to Develop*"
         pr_draft: false
         pr_label: "AutoCICD"

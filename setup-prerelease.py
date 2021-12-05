@@ -10,7 +10,7 @@ with open("version.txt", "r", encoding="utf-8") as fh:
     version = fh.read()
     fh.close()
 
-setup(name='sit-rep',
+setup(name='sit-rep-prerelease',
       version=version,
       py_modules=['sit-rep-prerelease'],
       description='Sit Rep [Pre-Release]| The System Situation Report',
