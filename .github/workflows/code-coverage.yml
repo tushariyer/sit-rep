@@ -1,0 +1,16 @@
+name: Code Coverage Analysis
+
+on:
+    pull_request:
+        branches:
+            - develop
+            - main
+
+jobs:
+    code-coverage-analysis:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: orgoro/coverage/v1
+            with:
+                coverageFile: .github/coverage-configs.xml
+                token: ${{ secrets.HUB_TOKEN }}
